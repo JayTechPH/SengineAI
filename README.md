@@ -11,6 +11,7 @@ This is a Python script that automates sending greetings on Facebook Messenger.
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Educational Purpose](#educational-purpose)
 
 ## Requirements
 
@@ -64,6 +65,15 @@ Feel free to customize the greetings and add more functionality to the script as
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Contributing
+We welcome contributions from the community. To contribute to the project, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch.
+3. Make your changes.
+4. Test your changes.
+5. Submit a pull request.
 
 ## Educational Purpose
 
