@@ -1,0 +1,15 @@
+{
+    "profile": "",
+    "admin_uid": "",
+    "chat_api": "",
+    "headless": false,
+    "On_Login_OTP": false,
+    "commands": [
+        "help",
+        "info",
+        "img",
+        "joke",
+        "admin",
+        "shutdown"
+    ]
+}

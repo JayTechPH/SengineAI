@@ -1,8 +1,21 @@
-# SengineAI
+<p align="center">
+  <img width="250" height="250" src="https://media.tenor.com/nJCX4ZuO4OkAAAAi/dancing-dance-moves.gif">
+</p>
+<h1 align="center">SengineAI</h1><p align="center">
+<b>SengineAI</b> is <b>Facebook Messenger Bot</b> Like Discord Bot.
+</p>   
 
-![Project Logo](bot.png)
+<p align=center>  
+<a href="https://github.com/JayTechPH"><img src="https://img.shields.io/badge/Author-JayTechPH-red.svg?style=for-the-badge&label=Author" /></a>
 
-This is a Python script that automates sending greetings on Facebook Messenger.
+<img src="https://img.shields.io/badge/Version-2.0-brightgreen?style=for-the-badge" >
+<img src="https://img.shields.io/github/stars/JayTechPH/SengineAI?style=for-the-badge">  
+<img src="https://img.shields.io/github/followers/JayTechPH?label=Followers&style=for-the-badge">
+</p>   
+
+* **If you like the tool and for my personal motivation so as to develop other tools please leave a +1 star** 
+
+This Python script is developed as an unofficial Facebook Messenger bot, similar to a Discord bot in functionality and versatility. It enables automated interactions within Facebook Messenger chats, offering features such as responding to specific user commands and sending automated messages. The bot can be customized to suit the specific needs of its users or groups through programming in Python and adding functions, making it a powerful tool for enhancing communication and engagement on the Facebook Messenger platform.
 
 ## Table of Contents
 
@@ -25,19 +38,29 @@ This is a Python script that automates sending greetings on Facebook Messenger.
 
 ```shell
 git clone https://github.com/JayTechPH/SengineAI.git
+```
 
 2. Install the dependencies:
 
 ```shell
-pip install undetected_chromedriver selenium
+pip install beautifulsoup4
+pip install selenium
+pip install undetected-chromedriver
 ```
 
 ## Usage
 
-1. Initialize the `facebook_bot` class with your configuration:
+1. Set the `username` and `password` in main.py:
 
 ```python
-bot = facebook_bot(gcid, username, password, morning, evening, afternoon, night)
+import Sengine.SengineAI as sg
+
+fb = sg.SengineAI()
+
+username = "set_username_here"
+password = "set_password_here"
+
+fb.login(username, password)
 ```
 
 2. Run the script:
@@ -49,16 +72,7 @@ python main.py
 The script will log in to Facebook Messenger and send greetings based on the specified times.
 
 ## Configuration
-
-You need to provide the following configuration parameters when initializing the `facebook_bot` class:
-
-- `gcid`: The ID of the group chat on Facebook Messenger.
-- `username`: Your Facebook username or email.
-- `password`: Your Facebook password.
-- `morning`: The time in 24-hour format when the "Good Morning" greeting should be sent (e.g., "08:00:00").
-- `evening`: The time in 24-hour format when the "Good Evening" greeting should be sent (e.g., "18:00:00").
-- `afternoon`: The time in 24-hour format when the "Good Afternoon" greeting should be sent (e.g., "13:00:00").
-- `night`: The time in 24-hour format when the "Good Night" greeting should be sent (e.g., "22:00:00").
+You need to provide the `username` and `password` in main.py, and you can add a custom command to config.json.
 
 Feel free to customize the greetings and add more functionality to the script as needed.
 
